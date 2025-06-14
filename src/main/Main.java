@@ -6,7 +6,6 @@ public class Main {
         factorial.setValor(5);
         
         int valor = factorial.getValor();
-        System.out.println(factorial.factorial(valor));
-        
+        System.out.println(factorial.iniciarFactorial());
     }
 }

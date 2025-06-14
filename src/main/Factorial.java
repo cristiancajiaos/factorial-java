@@ -23,11 +23,15 @@ public class Factorial {
         this.resultado = resultado;
     }
     
-    public int factorial(int numero) {
+    public int calcularFactorial(int numero) {
         int producto;
-        producto = (numero > 1) ? numero * this.factorial(numero-1) : 1;
+        producto = (numero > 1) ? numero * this.calcularFactorial(numero-1) : 1;
         this.setResultado(producto);
         return producto;
+    }
+    
+    public int iniciarFactorial() {
+        return this.calcularFactorial(this.getValor());
     }
     
     
